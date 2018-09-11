@@ -47,4 +47,12 @@ public class Account {
         this.emailAddress = emailAddress;
     }
 
+    public Set<Address> getAddresses() {
+        return addresses;
+    }
+
+    public void setAddresses(Set<Address> addresses) {
+        this.addresses = addresses;
+    }
+
 }
