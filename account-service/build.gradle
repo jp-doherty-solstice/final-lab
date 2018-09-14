@@ -36,6 +36,7 @@ dependencies {
 	runtime('mysql:mysql-connector-java')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
+	testCompile('com.h2database:h2')
 }
 
 dependencyManagement {

@@ -1,25 +1,14 @@
-package com.doherty.accountservice.entity;
+package com.doherty.ordermicroservice.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import java.util.List;
 
-import javax.persistence.*;
-
-import java.util.Set;
-
-@Entity
 public class Account {
 
-    @Id
-    @GeneratedValue
     private long accountId;
-
     private String firstName;
     private String lastName;
     private String emailAddress;
-
-    @OneToMany(cascade = CascadeType.ALL)
-    @JsonIgnore
-    private Set<Address> addresses;
+    private List<Address> addresses;
 
     public Account() { }
 
@@ -55,12 +44,11 @@ public class Account {
         this.emailAddress = emailAddress;
     }
 
-    public Set<Address> getAddresses() {
+    public List<Address> getAddresses() {
         return addresses;
     }
 
-    public void setAddresses(Set<Address> addresses) {
+    public void setAddresses(List<Address> addresses) {
         this.addresses = addresses;
     }
-
 }
