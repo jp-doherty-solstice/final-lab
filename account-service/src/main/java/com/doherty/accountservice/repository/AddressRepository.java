@@ -1,6 +1,6 @@
 package com.doherty.accountservice.repository;
 
-import com.doherty.accountservice.entity.Address;
+import com.doherty.accountservice.entities.Address;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

@@ -1,4 +1,4 @@
-package com.doherty.accountservice.entity;
+package com.doherty.accountservice.entities;
 
 import javax.persistence.*;
 

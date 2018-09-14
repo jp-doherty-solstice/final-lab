@@ -1,7 +1,7 @@
 package com.doherty.accountservice.repository;
 
-import com.doherty.accountservice.entity.Account;
-import com.doherty.accountservice.entity.Address;
+import com.doherty.accountservice.entities.Account;
+import com.doherty.accountservice.entities.Address;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @AutoConfigureTestDatabase(replace= AutoConfigureTestDatabase.Replace.NONE)
-public class AddressRepositoryTest {
+public class AddressRepositoryIntegrationTests {
 
     @Autowired
     private TestEntityManager entityManager;
