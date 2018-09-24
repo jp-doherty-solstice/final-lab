@@ -17,4 +17,8 @@ public class AddressService {
         return addressRepository.findAddressesForAccount(accountId);
     }
 
+    public Address get(Long id) {
+        return addressRepository.findById(id).get();
+    }
+
 }
